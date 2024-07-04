@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --rojo: rgb(194, 0, 0);
+    --gris-celeste: #9498f3;
+    --morado: #230443;
+    --negro: #000;
+    --blanco: #fff;
+}
+@font-face {
+    font-family: Titulos;
+    src: url(/Tipografia/lettering-20240701T224419Z-001/lettering/roman_sd/Roman\ SD.ttf);
+}
+@font-face {
+    font-family: Descripciones;
+    src: url(/Tipografia/lettering-20240701T224419Z-001/lettering/lemon_milk/lemon-milk.ttf);
+}
+body{
+    font-family: Descripciones;
+    color: var(--blanco);
+    line-height: 1.6;
+    min-height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0,0.5),
+        rgba(71,17,116,0.9)), 
+        url(../imagenes/Street-background.jpeg) no-repeat center center;
+    background-size: cover;          
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+/* Utility Classes */
+.bg-primary {
+    background: var(--morado);
+    color: var(--blanco);
+  }
+  
+  .bg-dark {
+    background: var(--morado);
+    color: var(--blanco);
+  }
+  
+  .bg-dark .bg-primary {
+    padding: 0 0.3rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid #333;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #333;
+    color: #fff;
+  }
+  
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .section-heading {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+/*Container*/
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.container-lg{
+    max-width: 1400px;
+}
+.container-sm{
+    max-width: 900px;
+}
+
+/*Wrapper*/
+/*.wrapper {
+    min-height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        rgba(194, 0, 0,0.5),
+        rgba(71,17,116,0.9)),
+        url(../imagenes/Street-background1.jpeg) no-repeat center;
+}
+*/
+/* Header */
+.header{
+    margin: 1.5rem auto;
+}
+.header .logo{
+    width:73px;
+}
+.header .header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .main-menu{
+    display: flex;
+    gap: 1rem;
+}
+.header .main-menu a{
+    padding: 0.5rem 1rem;
+}
+.header .main-menu a:hover{
+    background:var(--rojo);
+    color: var(--blanco);
+    border-radius: 20px;
+}
+/*
+.header .header-right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.header .header-right i{
+    margin-right: 5px;
+}
+.header .header-right a{
+    color: white;
+    border-radius: 20px;
+}
+.header .header-right a:hover{
+    color: var(--blanco);
+    border-radius: 20px;
+}
+*/
+
+/*current*/
+.current{
+    background: var(--rojo);
+    color: var(--blanco);
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+/*Hero*/
+.hero {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-family: Titulos;
+    font-size: 2.5rem;
+    line-height: 1.4;
+    font-weight: normal;
+  }
+.texto-acerca p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* Main Content */
+.main-content{
+    display: flex;
+    max-width: 1100px;
+    gap: 50px;
+    margin: 200px auto;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.main-content form{
+    flex: 1;
+}
+.main-content .text-container{
+    flex: 1;
+}
+
+
+/* Form */
+.form-group{
+    margin-bottom: 15px;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.form-group textarea{
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+/*button*/
+.btn {
+    display: block;
+    padding: 15px 20px;
+    border-radius: 20px;
+    width: 100%;
+    border: 0;
+    background-color: #ff0432;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #ff5c4d;
+}
+
+/* text-container*/
+.text-container h1{
+    font-size: 50px;
+    margin: 20px 0 20px;
+    line-height: 1.2;
+}
+.text-container{
+    font-size: 18px;
+}
+
+/*button whatsapp*/
+
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+
+/* Footer */
+.footer{
+    border-top: 1px solid var(--morado);
+    padding: 1rem 1.5rem;
+    margin-top: 2rem;
+}
+.footer .footer-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer img{
+    width: 120px;
+    height: 120px;
+}
+.footer h4{
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+.footer a{
+    margin: 0.2rem;
+}
+
+/* media queries*/
+
+
+@media (max-width: 768px){
+    .header{
+        padding: 30px 10px 30px;
+        flex-direction: column;
+    }
+    .header .header-flex,
+    .footer .footer-flex{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .header,
+    .header .header-right{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .main-content{
+        flex-direction: column-reverse;
+        justify-content: start;
+        margin: auto;
+    }
+    .main-content form,
+    .main-content .text-container{
+        width: auto;
+    }
+    .main-content h1{
+        font-size: 40px;
+        text-align: center;
+        line-height: 1.4;
+    }
+    .footer .footer-flex{
+        text-align: center;
+    }    
+}
+
+
+
+  @media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}
