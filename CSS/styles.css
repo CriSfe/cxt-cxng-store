@@ -96,12 +96,13 @@ a {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 1.5rem;
+    text-align: center;
 }
 .container-lg{
     max-width: 1400px;
 }
-.container-sm{
-    max-width: 900px;
+.container-sm {
+    height: 900px; /* Example height for larger screens */
 }
 
 /*Wrapper*/
@@ -119,7 +120,7 @@ a {
     margin: 1.5rem auto;
 }
 .header .logo{
-    width:73px;
+    width:80px;
 }
 .header .header-flex{
     display: flex;
@@ -182,9 +183,11 @@ a {
   }
 .texto-acerca p{
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 30px;
 }
+
+/*Galleria*/
 
 /* Main Content */
 .main-content{
@@ -339,6 +342,20 @@ a {
         font-size: 40px;
         text-align: center;
         line-height: 1.4;
+    }
+    .container-sm{
+        height: auto;
+    }
+    .hero {
+        height: 100%;
+      }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    .hero p {
+        padding-top: 10px;
+        font-size: 1.5rem;
     }
     .footer .footer-flex{
         text-align: center;
