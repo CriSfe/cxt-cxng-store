@@ -7,15 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="icon" href="imagenes/favicon_io/favicon-32x32.png">
     <!--Icon-Font-->
   <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <title>Cxt Gxng Store</title>
 </head>
+
 <body>
     
-<!-- Header-->
+<!-- Header menu-->
 <header class="header">
   <div class="container header-flex">
       <img src="imagenes/logo-20240702T051034Z-001/logo/Recurso 24.png" alt="Cxt Gxng Store" class="logo"> 
@@ -25,13 +28,16 @@
           <li><a class="current" href="galeria.html">Galeria</a></li>
           <li><a href="acerca.html">Acerca de nosotros</a></li>
           <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
       </ul>
   </nav>
 </div>
 </header>
+
+
 <!-- Gallery-->
-<h1>Nuestras camisetas</h1>
-<section class="gallery">
+
+<!--<section class="gallery">
   
     <div class="box">
       <img src="imagenes/tanda 20-20240704T224748Z-001/tanda 20/11.jpg" alt="Camiseta Cxt Gxng fondo blanco">
@@ -88,20 +94,67 @@
       <img src="imagenes/tanda 20-20240704T224748Z-001/tanda 20/13.jpg" alt="Camiseta Cxt Gxng fondo blanco">
       <img src="imagenes/tanda 20-20240704T224748Z-001/tanda 20/14.jpg" alt="Camiseta Urbana Cxt Gxng" class="hover-img">
     </div>
-</section>
+</section>-->
 
+<!-- Div que agrupa el aside y el main -->
+<div class="wrapper">
+<!-- Products Section -->
+<aside>
+  <!-- Button close menu-->
+  <button class="close-menu" id="close-menu">
+    <i class="bi bi-x"></i>
+</button>
 
+  <!-- Header Products Section-->
+  <header>
+    <h1 class="logo">Nuestras camisetas</h1>
+  </header>
+  <!-- Nav Bar Buttons Category -->
+  <nav>
+    <ul class="menu">
+      <li>
+        <i class="bi bi-hand-index-thumb-fill rotate-90"></i><button id="todos" class="button-menu button-category active">Todos los productos</button>
+      </li>
+      <li>
+        <i class="bi bi-hand-index-thumb rotate-90"></i><button id="camisetas" class="button-menu button-category">Camisetas</button>
+      </li>
+      <li>
+        <i class="bi bi-hand-index-thumb rotate-90"></i><button id="gorras" class="button-menu button-category">Gorras</button>
+      </li>
+      <li>
+        <i class="bi bi-hand-index-thumb rotate-90"></i><button id="abrigos" class="button-menu button-category">Abrigos</button>
+      </li>
+      <li>
+        <i class="bi bi-cart-fill"></i><a class="button-menu button-shopping" href="carrito.html">Carrito <span id="number" class="number">0</span></a>
+      </li>
+    </ul>
+  </nav>
+
+</aside>
+<!-- Main Section -->
+<main>
+  <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+    <div id="contenedor-productos" class="contenedor-productos">
+        <!-- Esto se va a rellenar con JS -->
+    </div>
+</main>
 <!-- Boton WhatsApp-->
     <a href="https://wa.link/aaa3ra" class="btn-wsp" target="_blank">
 	    <i class="fa fa-whatsapp icon"></i>
 	</a>
-
+</div>
  <!--footer-->
  <footer class="footer">
+  
     <div class="container footer-flex">
-      
+  
+      <!--Logo Footer-->     
       <img src="imagenes/logo-20240702T051034Z-001/logo/Recurso 24.png" alt="Cxt Gxng Store">
-      
+      <!-- Copyright-->
+      <div class="copyright">
+        <p class="footer-text">Copyright &copy; 2025 Cxt Gxng Store</p>
+      </div>
+      <!-- Contacto -->
       <div class="contact">
         <h4>Contactanos</h4>
         <ul>
@@ -111,7 +164,7 @@
         </a></li>
         </ul>
       </div>
-
+      <!-- Social-->
       <div class="social">
         <h4>Siguenos</h4>
         
@@ -127,7 +180,10 @@
       </div>
     </div>
   </footer>
-
+  <!-- Scripts -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/menu.js"></script>
 </body>
 
 </html>
